@@ -15,7 +15,8 @@ def clean_dataset(dataset):
     return dataset
 
 # Read the dataset
-dataset = pd.read_csv('dataset.csv')
+data_name = input("Enter the name of your csv file: ")
+dataset = pd.read_csv("data_name"+".csv")
 
 # Clean the dataset
 cleaned_dataset = clean_dataset(dataset)
